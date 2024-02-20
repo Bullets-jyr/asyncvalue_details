@@ -33,6 +33,9 @@ class WeatherFirstPage extends ConsumerWidget {
     print(weather.toStr);
     print(weather.props);
 
+    // 첫 호출에서 error가 발생하면?
+    // value를 access하고자하면 value는 error를 throw 합니다.
+    // loading 상태에서는 null
     try {
       print('value: ${weather.value}');
     } catch (e) {
